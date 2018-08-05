@@ -1,0 +1,13 @@
+######################################
+# Local paths
+# Lester James V. Miranda
+# ljvmiranda@gmail.com
+######################################
+
+export PATH="/home/ljvm/anaconda3/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+export GIT_EDITOR=vim
+export VISUAL=vim
+export EDITOR="$VISUAL"
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64"
+export CUDA_HOME=/usr/local/cuda
