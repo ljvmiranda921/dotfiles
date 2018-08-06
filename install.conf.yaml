@@ -8,6 +8,7 @@
 - link:
     ~/.bashrc: 
     ~/.shells: shells
+    ~/.tmux.conf:
     ~/.vim_runtime/my_configs.vim: vim/my_configs.vim
 
 - shell:
