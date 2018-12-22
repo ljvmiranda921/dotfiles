@@ -4,16 +4,6 @@
 # ljvmiranda@gmail.com
 #######################################
 
-function ntbktunnel(){
-    ssh -N -f -L localhost:8890:localhost:$1 ljvm@133.9.48.91
-}
-
-function mkmanu(){
-    mkdir -pv _build/{appendices,chapters}
-    latexmk -pdf -pv -outdir=./_build main.tex 
-}
-
-
 function ga(){
     git add $1
 }
@@ -29,6 +19,11 @@ function gco(){
 function revert(){
     git reset --hard $1
 }
+
+function gpo(){
+    git push origin $1 
+}
+
 
 # get current branch in git repo
 function parse_git_branch() {
