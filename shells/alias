@@ -19,7 +19,18 @@ alias l='ls -CF'
 alias q='exit'
 alias c='clear'
 alias h='history'
+alias tmux='env TERM=screen-256color tmux'
 alias hs='stack ghci'
+alias blackr='black -S --line-length 79'
+alias t='task'
+alias sa='source venv/bin/activate'
+alias tt='python setup.py install; pytest'
+
+# Shortcut to directories
+alias pyswarms='cd ~/Documents/Dev/pyswarms'
+alias blog='cd ~/Documents/Dev/ljvmiranda921.github.io'
+alias tm='cd ~/Documents/ThinkingMachines'
+alias cv='cd ~/Documents/Dev/cv'
 
 # Load bash file quickly
 alias bashrc='vim ~/.bashrc'
