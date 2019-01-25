@@ -25,11 +25,13 @@ alias blackr='black -S --line-length 79'
 alias t='task'
 alias sa='source venv/bin/activate'
 alias tt='python setup.py install; pytest'
+alias tf='terraform'
 
 # Shortcut to directories
 alias pyswarms='cd ~/Documents/Dev/pyswarms'
 alias blog='cd ~/Documents/Dev/ljvmiranda921.github.io'
 alias tm='cd ~/Documents/ThinkingMachines'
+alias tikz='cd ~/Documents/Dev/tikz'
 alias cv='cd ~/Documents/Dev/cv'
 
 # Load bash file quickly
