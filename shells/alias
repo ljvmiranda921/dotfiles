@@ -12,9 +12,8 @@ alias la='ls -A'
 alias pms='sudo pm-suspend'
 alias psg='ps -A | grep'
 alias se='sudo gvim'
-alias e='gvim'
+alias e='vim'
 alias smi='sudo make install'
-alias gpu='nvidia-smi -l 5'
 alias l='ls -CF'
 alias q='exit'
 alias c='clear'
@@ -26,6 +25,7 @@ alias t='task'
 alias sa='source venv/bin/activate'
 alias tt='python setup.py install; pytest'
 alias tf='terraform'
+alias r='ranger'
 
 # Shortcut to directories
 alias pyswarms='cd ~/Documents/Dev/pyswarms'
@@ -33,6 +33,9 @@ alias blog='cd ~/Documents/Dev/ljvmiranda921.github.io'
 alias tm='cd ~/Documents/ThinkingMachines'
 alias tikz='cd ~/Documents/Dev/tikz'
 alias cv='cd ~/Documents/Dev/cv'
+alias dev='cd ~/Documents/Dev'
+alias gotime='cd $GOPATH/src/github.com/ljvmiranda921'
+alias tiff='cd $GOPATH/src/github.com/thinkingmachines/tiffany'
 
 # Load bash file quickly
 alias bashrc='vim ~/.bashrc'
@@ -48,6 +51,9 @@ alias vimconfig='vim ~/.vim_runtime/my_configs.vim'
 alias myalias='vim ~/.shells/alias'
 alias mypaths='vim ~/.shells/paths'
 alias myfunctions='vim ~/.shells/functions'
+
+# For asciicast
+alias asciicast2gif='docker run --rm -v $PWD:/data asciinema/asciicast2gif'
 
 # Colors for man pages
 alias man="TERMINFO=~/.terminfo TERM=mostlike LESS=C PAGER=less man"
@@ -82,7 +88,12 @@ alias gb='git branch -a'
 alias gd='git diff'
 alias gr='git reflog'
 alias glf='git ls-files'
+alias grhh='git reset --hard HEAD'
 
 # Useful for C/C++ work
 # R for recursive, p10 to show file paths
 alias scope='cscope -CR -p10'
+
+alias glNoGraph='git log --color=always --format="%C(auto)%h%d %s %C(black)%C(bold)%cr% C(auto)%an" "$@"'
+_gitLogLineToHash="echo {} | grep -o '[a-f0-9]\{7\}' | head -1"
+_viewGitLogLine="$_gitLogLineToHash | xargs -I % sh -c 'git show --color=always % | diff-so-fancy'"
