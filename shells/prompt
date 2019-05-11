@@ -12,4 +12,4 @@ function virtualenv_info(){
 
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 VENV="\$(virtualenv_info)"
-export PS1="\n\[\e[34m\]${VENV}\[\e[m\]\[\e[32m\]\u\[\e[m\]\[\e[32m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\]\[\e[33m\]\w\[\e[m\] \[\e[36m\]\`parse_git_branch\`\[\e[m\] \n\\$ "
+export PS1="\n\[\e[34m\]${VENV}\[\e[m\]\[\e[32m\]\u\[\e[m\]\[\e[32m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\]\[\e[33m\]\w\[\e[m\] \[\e[36m\]\`parse_git_branch\`\[\e[m\] \nλ: "
