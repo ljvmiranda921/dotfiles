@@ -192,3 +192,9 @@ function cd() {
         builtin cd "$dir" &> /dev/null
     done
 }
+
+# popoy - create a bash function
+popoy() {
+    wget -O $1 https://raw.githubusercontent.com/ljvmiranda921/popoy/master/template.bash
+    chmod +x $1 
+}

@@ -26,6 +26,8 @@ alias sa='source venv/bin/activate'
 alias tt='python setup.py install; pytest'
 alias tf='terraform'
 alias r='ranger'
+alias rn='radian'
+alias tsh='/usr/local/bin/tsh'
 
 # Shortcut to directories
 alias pyswarms='cd ~/Documents/Dev/pyswarms'
@@ -36,6 +38,8 @@ alias cv='cd ~/Documents/Dev/cv'
 alias dev='cd ~/Documents/Dev'
 alias gotime='cd $GOPATH/src/github.com/ljvmiranda921'
 alias tiff='cd $GOPATH/src/github.com/thinkingmachines/tiffany'
+alias paula='cd $GOPATH/src/github.com/ljvmiranda921/paula'
+alias nbl='cd $GOPATH/src/github.com/thinkingmachines/nabla'
 
 # Load bash file quickly
 alias bashrc='vim ~/.bashrc'
@@ -54,6 +58,9 @@ alias myfunctions='vim ~/.shells/functions'
 
 # For asciicast
 alias asciicast2gif='docker run --rm -v $PWD:/data asciinema/asciicast2gif'
+
+# For pandoc
+alias pandoc='/usr/bin/pandoc'
 
 # Colors for man pages
 alias man="TERMINFO=~/.terminfo TERM=mostlike LESS=C PAGER=less man"
